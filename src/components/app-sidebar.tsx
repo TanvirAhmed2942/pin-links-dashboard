@@ -26,6 +26,8 @@ import {
 } from "@/components/ui/sidebar"
 import Image from "next/image"
 
+const base_path = "/dashboard"
+
 // This is sample data.
 const data = {
   user: {
@@ -36,13 +38,13 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: `${base_path}/overview`,
       icon: SquareTerminal,
       isActive: true,
     },
     {
       title: "Users",
-      url: "#",
+      url: `${base_path}/users`,
       icon: Users,
     },
     {
@@ -52,11 +54,11 @@ const data = {
       items: [
         {
           title: "Plans",
-          url: "#",
+          url: `${base_path}/subscription/plan`,
         },
         {
           title: "Transactions",
-          url: "#",
+          url: `${base_path}/subscription/transaction`,
         },
       ],
     },
