@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { Button } from "@/components/ui/button";
+import { Bell } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,8 +30,23 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      ><SidebarProvider>
+          <AppSidebar />
+          <SidebarInset>
+            <header className="flex h-16 shrink-0 items-center gap-2 bg-sidebar transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+              <div className="flex items-center justify-between gap-2 px-4 w-full">
+                <SidebarTrigger className="-ml-1 cursor-pointer hover:bg-[#184f3a]/50 text-sidebar-foreground hover:text-sidebar-foreground/90 p-2 rounded-lg size-10" />
+
+                <div className="bg-[#0b2f21] text-sidebar-accent-foreground hover:bg-[#184f3a]/50 hover:text-sidebar-accent-foreground/90 p-2 rounded-full size-10 cursor-pointer">
+                  <Bell className="text-[#6FAE97]" />
+                </div>
+              </div>
+            </header>
+            <div className="flex flex-1 flex-col gap-4 p-4 rounded-lg">
+              {children}
+            </div>
+          </SidebarInset>
+        </SidebarProvider>
       </body>
     </html>
   );
