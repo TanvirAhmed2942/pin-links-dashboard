@@ -58,14 +58,15 @@ const data = {
         },
         {
           title: "Transactions",
-          url: `${base_path}/subscription/transaction`,
+          url: `${base_path}/subscription/transactions`,
         },
       ],
     },
     {
       title: "Courses",
-      url: "#",
+      url: `${base_path}/course`,
       icon: BookOpen,
+
     },
     {
       title: "Tournaments",
