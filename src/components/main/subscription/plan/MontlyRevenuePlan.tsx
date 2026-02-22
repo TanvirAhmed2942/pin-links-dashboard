@@ -54,6 +54,7 @@ export default function MontlyRevenuePlan() {
                                 tickFormatter={(value) => value.toLocaleString()}
                             />
                             <Tooltip
+                                cursor={false}
                                 contentStyle={{
                                     borderRadius: "var(--radius)",
                                     border: "1px solid hsl(var(--border))",

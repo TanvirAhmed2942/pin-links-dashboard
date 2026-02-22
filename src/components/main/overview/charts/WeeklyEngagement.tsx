@@ -58,6 +58,7 @@ export default function WeeklyEngagement() {
                                 tickFormatter={(value) => value.toString()}
                             />
                             <Tooltip
+                                cursor={false}
                                 contentStyle={{
                                     borderRadius: "var(--radius)",
                                     border: "1px solid hsl(var(--border))",

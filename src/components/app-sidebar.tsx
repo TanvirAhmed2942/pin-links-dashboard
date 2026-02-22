@@ -70,7 +70,7 @@ const data = {
     },
     {
       title: "Tournaments",
-      url: "#",
+      url: `${base_path}/tournaments`,
       icon: Trophy,
     }, {
       title: "Moderation",
@@ -79,7 +79,7 @@ const data = {
       items: [
         {
           title: "Posts",
-          url: "#",
+          url: `${base_path}/moderations`,
         }
       ],
     }, {
@@ -89,7 +89,7 @@ const data = {
       items: [
         {
           title: "Engagement",
-          url: "#",
+          url: `${base_path}/engagement`,
         }
       ],
     },
