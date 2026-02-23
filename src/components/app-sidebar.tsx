@@ -12,6 +12,9 @@ import {
   Users,
   ShieldCheck,
   ChartLine,
+  Briefcase,
+  Bug,
+  Settings,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -92,6 +95,21 @@ const data = {
           url: `${base_path}/engagement`,
         }
       ],
+    },
+    {
+      title: "Reports",
+      url: `${base_path}/reports`,
+      icon: Bug,
+    },
+    {
+      title: "Employees",
+      url: `${base_path}/employee`,
+      icon: Briefcase,
+    },
+    {
+      title: "Settings",
+      url: "#",
+      icon: Settings,
     },
   ],
   projects: [
