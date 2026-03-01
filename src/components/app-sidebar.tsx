@@ -15,6 +15,7 @@ import {
   Briefcase,
   Bug,
   Settings,
+  Gift,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -85,7 +86,8 @@ const data = {
           url: `${base_path}/moderations`,
         }
       ],
-    }, {
+    },
+    {
       title: "Analytics",
       url: "#",
       icon: ChartLine,
@@ -95,6 +97,29 @@ const data = {
           url: `${base_path}/engagement`,
         }
       ],
+    },
+    {
+      title: "Raffles",
+      icon: Gift,
+      items: [
+        {
+          title: "All Raffles",
+          url: `${base_path}/raffles/all-raffles`,
+        },
+        {
+          title: "Raffle Categories",
+          url: `${base_path}/raffles/raffle-categories`,
+        },
+        {
+          title: "Raffle Participants",
+          url: `${base_path}/raffles/raffle-participants`,
+        },
+        {
+          title: "Raffle Winners",
+          url: `${base_path}/raffles/raffle-winners`,
+        },
+      ],
+
     },
     {
       title: "Reports",
@@ -135,7 +160,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader className="flex items-center justify-center p-4">
-        <Image src="/logo.svg" alt="Logo" width={500} height={500} className="w-full h-full object-contain" />
+        <Image src="/logo.svg" alt="Logo" width={500} height={500} className=" w-auto h-auto object-cover" />
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
