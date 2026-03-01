@@ -115,8 +115,8 @@ const data = {
           url: `${base_path}/raffles/raffle-participants`,
         },
         {
-          title: "Raffle Winners",
-          url: `${base_path}/raffles/raffle-winners`,
+          title: "Draw Winners",
+          url: `${base_path}/raffles/draw-winners`,
         },
       ],
 
