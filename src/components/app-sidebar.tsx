@@ -137,7 +137,7 @@ const data = {
     },
     {
       title: "Settings",
-      url: "#",
+      url: `${base_path}/settings`,
       icon: Settings,
     },
   ],
