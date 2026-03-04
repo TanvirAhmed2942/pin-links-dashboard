@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import DrawCard from "./DrawCards"
 import DrawModal, { type DrawParticipant } from "./DrawModal"
 import { cn } from "@/lib/utils"
+import WinnerStats from "./WinnerStats"
 
 const pendingDraws = [
     { id: "1", raffleName: "Premium Golf Club Set", entryFee: "$1.00", endDate: "2024-02-15", totalEntries: "≈ 500", eligibleEntries: 500 },
@@ -61,7 +62,7 @@ function DrawWinnersLayout() {
                 title="Draw Winners"
                 description="Draw winners and manage raffle results"
             />
-
+            <WinnerStats />
             <Tabs defaultValue="pending" className="w-full">
                 <TabsList
                     variant="default"

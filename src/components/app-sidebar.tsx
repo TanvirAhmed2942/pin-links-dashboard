@@ -118,6 +118,10 @@ const data = {
           title: "Draw Winners",
           url: `${base_path}/raffles/draw-winners`,
         },
+        {
+          title: "Raffle Analytics",
+          url: `${base_path}/raffles/analytics`,
+        },
       ],
 
     },
