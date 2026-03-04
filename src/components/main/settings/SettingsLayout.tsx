@@ -14,7 +14,7 @@ function SettingsLayout() {
                 title="Settings Control"
                 description="Enable or disable platform features"
             />
-            <Tabs >
+            <Tabs defaultValue="platform-branding">
                 <TabsList variant="line" className="gap-4">
                     <TabsTrigger value="platform-branding" className="rounded-none border-2 border-transparent bg-transparent px-0 pb-3 pt-3 text-sidebar-foreground hover:text-white data-[state=active]:text-white data-[state=active]:bg-transparent data-[state=active]:border-b-emerald-500"><Image /> Platform Branding</TabsTrigger>
                     <TabsTrigger value="legal-documents" className="rounded-none border-2 border-transparent bg-transparent px-0 pb-3 pt-3 text-sidebar-foreground hover:text-white data-[state=active]:text-white data-[state=active]:bg-transparent data-[state=active]:border-b-emerald-500"><FileText />Legal Documents</TabsTrigger>

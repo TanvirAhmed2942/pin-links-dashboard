@@ -38,12 +38,12 @@ export default function PlatformBranding() {
             <Input
               value={logoPath}
               onChange={(e) => setLogoPath(e.target.value)}
-              className="flex-1 rounded-lg border-zinc-700 bg-zinc-800/80 text-emerald-400 placeholder:text-zinc-500 focus-visible:ring-emerald-500"
+              className="flex-1 rounded-lg border-emerald-700 bg-background text-emerald-400 placeholder:text-zinc-500 focus-visible:ring-emerald-500"
               readOnly
             />
             <Button
               variant="secondary"
-              className="shrink-0 bg-zinc-700 text-white hover:bg-zinc-600"
+              className="shrink-0 bg-emerald-700 text-white hover:bg-emerald-600"
             >
               Upload Logo
             </Button>
@@ -72,11 +72,11 @@ export default function PlatformBranding() {
             <Input
               value={appName}
               onChange={(e) => setAppName(e.target.value)}
-              className="flex-1 rounded-lg border-zinc-700 bg-zinc-800/80 text-emerald-400 placeholder:text-zinc-500 focus-visible:ring-emerald-500"
+              className="flex-1 rounded-lg border-emerald-700 bg-background text-emerald-400 placeholder:text-zinc-500 focus-visible:ring-emerald-500"
             />
             <Button
               variant="secondary"
-              className="shrink-0 bg-zinc-700 text-white hover:bg-zinc-600"
+              className="shrink-0 bg-emerald-700 text-white hover:bg-emerald-600"
             >
               Save
             </Button>

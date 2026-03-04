@@ -105,8 +105,8 @@ export default function LegalDocuments() {
                   <Button
                     type="button"
                     variant="secondary"
-                    className="shrink-0 gap-2 bg-zinc-700 text-white hover:bg-zinc-600"
-                    onClick={() => {}}
+                    className="shrink-0 gap-2 bg-emerald-700 text-white hover:bg-emerald-600"
+                    onClick={() => { }}
                   >
                     <Pencil className="size-4" />
                     Edit
