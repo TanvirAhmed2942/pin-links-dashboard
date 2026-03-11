@@ -1,8 +1,8 @@
-import TransactionsLayout from '@/components/main/subscription/transactions/TransactionLayout.tsx'
+import TransactionLayout from '@/components/main/subscription/transactions/TransactionLayout'
 
 function TransactionsPage() {
     return (
-        <TransactionsLayout />
+        <TransactionLayout />
     )
 }
 
