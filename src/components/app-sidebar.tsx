@@ -44,7 +44,6 @@ const data = {
       title: "Dashboard",
       url: `${base_path}/overview`,
       icon: SquareTerminal,
-      isActive: true,
     },
     {
       title: "Users",
